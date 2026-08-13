@@ -1,0 +1,29 @@
+{
+  "target": "Appliances",
+  "frequency": "hourly",
+  "forecast_horizon_hours": 24,
+  "test_period_days": 14,
+  "train_start": "2016-01-11 17:00:00",
+  "train_end": "2016-05-13 18:00:00",
+  "test_start": "2016-05-13 19:00:00",
+  "test_end": "2016-05-27 18:00:00",
+  "best_model_by_rmse": "sarimax_exog",
+  "best_sarimax_order": "(0, 0, 6)",
+  "sarimax_grid_mode": "fast",
+  "sarimax_grid_combinations_evaluated": 36,
+  "sarimax_train_days": 30,
+  "exogenous_variables": [
+    "T_out",
+    "Press_mm_hg",
+    "RH_out",
+    "Windspeed",
+    "Visibility",
+    "Tdewpoint",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend"
+  ],
+  "note": "foundation_surrogate is a transparent local stand-in unless Chronos/TimesFM/TimeGPT is configured."
+}
